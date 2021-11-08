@@ -21,3 +21,19 @@ python manage.py createsuperuser
 
 criar app
 python manage.py startapp website
+
+criar git repositorio
+git init
+
+fazer um commit
+git add .
+git commit -m "First commit"
+git push origin master
+git push -u origin master
+
+add remote
+git remote add origin endereco
+git remote add origin https://github.com/Falconi03/cursodjango3.git
+
+listar branchs
+git branch -v
