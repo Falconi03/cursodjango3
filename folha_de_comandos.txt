@@ -1,0 +1,23 @@
+ativar virtual env
+cd projeto
+cd venv
+cd scripts
+activate
+
+criar projeto django
+django-admin startproject blog
+
+rodar projeto django
+python manage.py runserver
+
+parar servidor
+ctrl + C
+
+criar tabelas no meu banco de dados
+python manage.py migrate
+
+criar super usuario
+python manage.py createsuperuser
+
+criar app
+python manage.py startapp website
