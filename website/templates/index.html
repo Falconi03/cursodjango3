@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TREINO</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    </head>
+    <body>
+        <h1>em andamento...</h1>
+        <form method="post" action="{% url 'cadastro' %}">
+            {% csrf_token %}
+            <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+            <div class="col-6 col-12-xsmall"><input type="text" name="email" id="email" placeholder="Email" /></div>
+            <div class="col-6 col-12-xsmall"><input type="text" name="password" id="password" placeholder="Password" /></div>
+            <div class="col-6 col-12-xsmall"><input type="text" name="confirm_password" id="Confirm_Password" placeholder="confirm_password" /></div>
+            <input type="submit" value="cadastrar-se">
+        </form>
+        <form method="get" action="{% url 'login' %}">
+            {% csrf_token %}
+            <div class="col-6 col-12-xsmall"><input type="text" name="email" id="email" placeholder="Email" /></div>
+            <div class="col-6 col-12-xsmall"><input type="text" name="password" id="password" placeholder="Password" /></div>
+            <input type="submit" value="login">
+            <p>{{verificacao}}</p>
+            <p>{{cadastros}}</p>
+        </form>
+    </body>
+</html>
