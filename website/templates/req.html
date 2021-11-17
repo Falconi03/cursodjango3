@@ -8,9 +8,8 @@
 </head>
 <body>    
 </body>
-{% for indice, cadastro in cadastros.items %}
-    {%  for k,v in cadastro.items %}        
-        <p>{{ k }}: {{ v }}</p>
-    {% endfor %}
+{%  for k,v in cadastros.items %}        
+    <p>{{ k }}: {{ v }}</p>
 {% endfor %}
+
 </html>
